@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>AirfTINoise</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QCustomPlot" name="widgetGraph" native="true">
@@ -234,7 +234,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>720</x>
@@ -260,7 +260,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -285,7 +285,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="doubleSpinBoxFreq"/>
+      <widget class="QDoubleSpinBox" name="doubleSpinBoxFreq">
+       <property name="locale">
+        <locale language="English" country="UnitedKingdom"/>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_21">
@@ -295,7 +299,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="doubleSpinBoxSPL"/>
+      <widget class="QDoubleSpinBox" name="doubleSpinBoxSPL">
+       <property name="locale">
+        <locale language="English" country="UnitedKingdom"/>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -315,6 +323,7 @@
     </property>
     <addaction name="actionExport_as_png"/>
     <addaction name="separator"/>
+    <addaction name="actionExport_data_as_csv"/>
     <addaction name="actionClose"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
@@ -362,6 +371,11 @@
   <action name="actionAbout_QCustomPlot">
    <property name="text">
     <string>About QCustomPlot</string>
+   </property>
+  </action>
+  <action name="actionExport_data_as_csv">
+   <property name="text">
+    <string>Export data as .csv</string>
    </property>
   </action>
  </widget>

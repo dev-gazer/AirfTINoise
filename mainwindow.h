@@ -8,6 +8,9 @@
 #include <QFontDialog>
 #include <QColorDialog>
 #include <QFileDialog>
+#include <Eigen/Dense>
+
+using namespace Eigen;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -43,9 +46,13 @@ private slots:
 
     void on_actionAbout_QCustomPlot_triggered();
 
+    void on_actionExport_data_as_csv_triggered();
+
 private:
     Ui::MainWindow *ui;
     QVector<double> xValuesQVector, yValuesQVector;
     QVector<double> qv_x, qv_y;
+    VectorXd SPL, freq;
+
 };
 #endif // MAINWINDOW_H
