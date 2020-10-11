@@ -1,3 +1,6 @@
+# *Important*
+To run the calculations, you will need to download Eigen library at http://eigen.tuxfamily.org/index.php?title=Main_Page. After that, go to the project file AirfNoise.pro and substitute the path INCLUDEPATH += "/home/martuscellifaria/Downloads/eigen-3.3.7" for any of your preference.
+
 # AirfTINoise
 With this app, you can run airfoil turbulent inflow noise prediction and compare it to measurement data in the same environment.
 
